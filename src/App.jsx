@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route,} from 'react-router-dom'
+import { BrowserRouter as Router,} from 'react-router-dom'
 import { ChakraProvider } from '@chakra-ui/react'
 
 import './App.css'

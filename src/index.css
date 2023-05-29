@@ -1,0 +1,38 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Nunito&family=Zilla+Slab&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Zilla+Slab&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Figtree:wght@300&family=Nunito&family=Zilla+Slab&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Cinzel', serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding:0;
+
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  width:100%;
+
+
+  color: rgba(0, 0, 0, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}

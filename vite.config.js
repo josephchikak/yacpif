@@ -8,11 +8,10 @@ export default defineConfig({
     rollupOptions: {
       external:[
         'react',
+        '@chakra-ui/react',
         'react-dom'
         ],
     },
-    optimizeDeps:{
-      include:['@chakra-ui/react']
-    }
+   
   }
 })

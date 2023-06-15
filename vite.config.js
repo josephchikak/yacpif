@@ -13,6 +13,7 @@ export default defineConfig({
         'react-redux',
         '@reduxjs/toolkit',
         'react-spring/web',
+        '@chakra-ui/icons',
         ],
     },
    

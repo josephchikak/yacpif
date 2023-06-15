@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <>
     <div id='board' className="w-[100vw] h-[500px] flex sm:justify-center" onMouseOver={() => dispatch(setTheme('#000000'))}>
-        <div className='w-[70vw]  flex justify-between p-10'>
+        <div className='sm:w-[75vw] w-[80vw] flex justify-between p-10'>
         <div className="flex sm:justify-start h-[20em] flex-col">
             {/* <h1 className='pb-5'>YACPIF Board of Trustees</h1> */}
             <img className='w-[400px] rounded' src={rev} alt='Rev. Dr. Yakubu Pam' />

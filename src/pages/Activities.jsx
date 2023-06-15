@@ -25,8 +25,8 @@ const Activities = () => {
 
 
   return (
-    <div className='flex justify-center w-[100vw] h-[100vh] lg:pt-10' onMouseOver={() => dispatch(setTheme('#000000'))}>
-        <div className='flex flex-col w-[100vw] lg:grid grid-cols-1 sm:grid-rows-2 grid-flow-col lg:w-[70vw] lg:h-full text-black' >
+    <div className='flex justify-center w-[100vw] sm:h-[100vh] lg:pt-10 ' onMouseOver={() => dispatch(setTheme('#000000'))}>
+        <div className='flex flex-col w-[100vw] h-full lg:grid grid-cols-1 sm:grid-rows-2 grid-flow-col lg:w-[70vw] lg:h-full text-black' >
             <animated.div ref={ref} style={{opacity: inView ? 1  : 0}} className=' project w-[100vw] sm:w-full h-full bg-[#B2C58B]'>
                 <div className='flex flex-col justify-center  h-full p-5'>
                     <h3 className='text-2xl mainText pb-2'>
@@ -74,12 +74,12 @@ const Activities = () => {
                         </div>
                 </animated.div>
 
-            <animated.div id='projectDiv2' ref={ref3} style={{transform: inView3 ? 'translateX(0px) ' : 'translateY(-300px)'}} className='pb-5 z-0 project lg:w-[30vw] lg:h-[400px] bg-[#B2C58B] lg:hover:h-full hover:bg-slate-100] '>
-                 <div className='flex flex-col justify-center w-100vw sm:w-[500px] h-full p-5'>
+            <animated.div id='projectDiv2' ref={ref3} style={{transform: inView3 ? 'translateX(0px) ' : 'translateY(-300px)'}} className='pb-5 z-0 project lg:w-[500px] h-full lg:h-[400px] bg-[#B2C58B] lg:hover:h-full hover:bg-slate-100] '>
+                 <div className='flex flex-col justify-center w-[100vw] sm:w-[500px] h-full p-5'>
                         <h3 className='text-2xl mainText pb-2'>  
                         Peace Cup 2010
                         </h3>
-                        <p >
+                        <p className='text-clip'>
                         YACPIF hosted Peace Cup 2010 on 21 December 2010 at Bukuru Mini-Stadium. The winning teams from the Jos North and Jos South Peace Cup Camps (posted about here) played in a tournament football match. A peace rally accompanied the football match.
                         </p>
                         <a href="https://yacpif.wordpress.com/2010/12/22/peace-cup-2010/" target="_blank" rel="noopener noreferrer">

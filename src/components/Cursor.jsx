@@ -101,7 +101,7 @@ const Cursor = ({}) => {
 
   return (
     <>
-        <div ref={dotOutline} className="cursor-dot-outline" style={{backgroundColor: theme.background}}></div>
+        <div ref={dotOutline} className="cursor-dot-outline invisible sm:visible" style={{backgroundColor: theme.background}}></div>
     </>
   )
 }

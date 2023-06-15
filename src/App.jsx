@@ -5,7 +5,6 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { configureStore } from '@reduxjs/toolkit'
 import './App.css'
 import Home from './pages/Home'
-// import Articles from './pages/Articles'
 import Footer from './components/Footer'
 import About from './pages/About'
 import Navbar from './components/Navbar'
@@ -43,7 +42,7 @@ function App() {
         <Cursor />
          <Navbar/> 
          <Home/>
-          <About  mouseOverEventB= {mouseOverEventB} />
+          <About />
           <Activities/>
           <Projects/>
           <Footer/>

@@ -1,12 +1,10 @@
 import { Button, } from '@chakra-ui/react'
 import {ArrowForwardIcon} from '@chakra-ui/icons'
-// import Navbar from '../components'
 import './pages.css'
 import { Element } from 'react-scroll/modules'
 
 import { useDispatch, useSelector } from 'react-redux';
 import { setTheme } from '../themeSlice';
-
 
 
 const Home = () => {

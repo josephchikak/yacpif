@@ -1,4 +1,5 @@
 // import React from 'react'
+import React from 'react';
 import rev from '../assets/images/image5.jpg'
 import facebook from '../assets/images/facebook.png'
 import weALT from '../assets/images/IMG_1922.png'

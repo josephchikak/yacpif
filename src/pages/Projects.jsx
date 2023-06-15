@@ -1,6 +1,6 @@
 // import React from 'react'
 import { useSpring, animated, useScroll, useInView } from '@react-spring/web'
-
+import React from 'react';
 import './pages.css'
 import { Button, } from '@chakra-ui/react'
 import {ArrowForwardIcon} from '@chakra-ui/icons'

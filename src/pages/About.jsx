@@ -1,3 +1,4 @@
+import React from 'react';
 import { useSpring, animated, useScroll, useInView } from '@react-spring/web'
 import { useEffect } from 'react';
 import {ThemeContext, themes} from '../Cursor-theme'

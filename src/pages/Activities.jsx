@@ -1,3 +1,4 @@
+import React from 'react';
 import { animated, useInView } from '@react-spring/web'
 import {Button} from '@chakra-ui/react'
 import {ArrowForwardIcon} from '@chakra-ui/icons'

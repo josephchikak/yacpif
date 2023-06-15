@@ -9,7 +9,7 @@ export default defineConfig({
       external:[
         // '@chakra-ui/react',
         'react-redux',
-        '@reduxjs/toolkit',
+        // '@reduxjs/toolkit',
         'react-spring/web',
         '@chakra-ui/icons',
         "react-scroll",

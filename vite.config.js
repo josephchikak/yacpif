@@ -11,7 +11,7 @@ export default defineConfig({
         'react-redux',
         // '@reduxjs/toolkit',
         'react-spring/web',
-        '@chakra-ui/icons',
+        // '@chakra-ui/icons',
         "react-scroll",
         ],
     },

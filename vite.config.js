@@ -7,12 +7,12 @@ export default defineConfig({
   build:{
     rollupOptions: {
       external:[
-        // '@chakra-ui/react',
-        // 'react-redux',
-        // '@reduxjs/toolkit',
-        // 'react-spring/web',
-        // '@chakra-ui/icons',
-        // "react-scroll",
+        '@chakra-ui/react',
+        'react-redux',
+        '@reduxjs/toolkit',
+        'react-spring/web',
+        '@chakra-ui/icons',
+        "react-scroll",
         ],
     },
    

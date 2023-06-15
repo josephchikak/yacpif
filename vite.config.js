@@ -12,6 +12,7 @@ export default defineConfig({
         'react-dom',
         'react-redux',
         'reduxjs/toolkit',
+        'react-spring/web',
         ],
     },
    

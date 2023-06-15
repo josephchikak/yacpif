@@ -9,7 +9,8 @@ export default defineConfig({
       external:[
         'react',
         '@chakra-ui/react',
-        'react-dom'
+        'react-dom',
+        'react-redux'
         ],
     },
    

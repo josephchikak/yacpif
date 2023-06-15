@@ -2,7 +2,6 @@ import { Button, } from '@chakra-ui/react'
 import {ArrowForwardIcon} from '@chakra-ui/icons'
 import './pages.css'
 import { Element } from 'react-scroll/modules'
-
 import { useDispatch, useSelector } from 'react-redux';
 import { setTheme } from '../themeSlice';
 
@@ -10,8 +9,6 @@ import { setTheme } from '../themeSlice';
 const Home = () => {
  
   const dispatch = useDispatch()
-
-
   return (
    <Element name='home'>
       <div id='home' className='w-[98vw] md:h-[100vh] pb-10 flex justify-center border-b border-black text-center' onMouseOver={() => dispatch(setTheme('#000000'))}>

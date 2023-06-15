@@ -3,6 +3,9 @@ import {Button} from '@chakra-ui/react'
 import {ArrowForwardIcon} from '@chakra-ui/icons'
 import './pages.css'
 import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { setTheme } from '../themeSlice';
+
 
 const Activities = () => {
   const [ref, inView] = useInView();
@@ -12,20 +15,20 @@ const Activities = () => {
   useEffect(() =>{
    const project2 = document.getElementById('projectDiv')
    const project3 = document.getElementById('projectDiv2')
-//    console.log(project2)
-   window.innerWidth < 500 ? project2.style.transform = null : null
-   window.innerWidth < 500 ? project3.style.transform = null : null
+   window.innerWidth < 700 ? project2.style.transform = null : null
+   window.innerWidth < 700 ? project3.style.transform = null : null
 
   })
 
+  const dispatch = useDispatch()
 
 
   return (
-    <div className='flex justify-center w-[100vw] h-[100vh] lg:pt-10'>
+    <div className='flex justify-center w-[100vw] h-[100vh] lg:pt-10' onMouseOver={() => dispatch(setTheme('#000000'))}>
         <div className='flex flex-col w-[100vw] lg:grid grid-cols-1 sm:grid-rows-2 grid-flow-col lg:w-[70vw] lg:h-full text-black' >
             <animated.div ref={ref} style={{opacity: inView ? 1  : 0}} className=' project w-[100vw] sm:w-full h-full bg-[#B2C58B]'>
                 <div className='flex flex-col justify-center  h-full p-5'>
-                    <h3 className='text-2xl'>
+                    <h3 className='text-2xl mainText pb-2'>
                     Peace Banners
                     </h3>
                     <p className='lg:text-clip'>
@@ -37,7 +40,7 @@ const Activities = () => {
                             colorScheme='black' 
                             variant='outline'
                             width='200px'
-                            className='justify-self-end mt-3'>
+                            className='justify-self-end mt-3 cursor-none'>
                             Read more
                         </Button>
                         
@@ -46,38 +49,33 @@ const Activities = () => {
                 </div>
                
             </animated.div>
-            <div className='lg:w-[25vw] lg:h-[25vh] bg-slate-100'>
-        
-                
 
-            </div>
-            
-            <animated.div id='projectDiv' ref={ref2} style={{transform: inView2 ? 'translateX(0px) ' : 'translateY(250px)'}} className='project w-full sm:h-[25vh] hover:h-full bg-slate-100'>
-                  <div  className='flex flex-col justify-center w-100vw sm:w-[500px] h-full p-5'>
-                        <h3 className='text-2xl'>
-                        Local Peace Football Programs
-                        </h3>
-                        <p>
-                        After the success of the Peace Cup football program in Jos North and Jos South that brought Christian and Muslim youths together <br /> the Young Ambassadors suggested that Peace Football programs be held in their local communities.
-                        </p>
-                        <a href="https://yacpif.wordpress.com/2011/05/27/local-peace-football-programs/" target="_blank" rel="noopener noreferrer">
-                            <Button 
-                                rightIcon={<ArrowForwardIcon />} 
-                                colorScheme='black' 
-                                variant='outline'
-                                width='200px'
-                                className='justify-self-end mt-3'>
-                                Read more
-                            </Button>
-                        </a>
-                    
+            <div className='lg:w-[25vw] lg:h-[25vh] bg-slate-100'>   
+                </div>
+                    <animated.div id='projectDiv' ref={ref2} style={{transform: inView2 ? 'translateX(0px) ' : 'translateY(250px)'}} className='project w-full sm:h-[300px] hover:h-full bg-slate-100'>
+                    <div  className='flex flex-col justify-center w-100vw sm:w-[500px] h-full p-5'>
+                            <h3 className='text-2xl mainText pb-2'>
+                            Local Peace Football Programs
+                            </h3>
+                            <p>
+                            After the success of the Peace Cup football program in Jos North and Jos South that brought Christian and Muslim youths together <br /> the Young Ambassadors suggested that Peace Football programs be held in their local communities.
+                            </p>
+                            <a href="https://yacpif.wordpress.com/2011/05/27/local-peace-football-programs/" target="_blank" rel="noopener noreferrer">
+                                <Button 
+                                    rightIcon={<ArrowForwardIcon />} 
+                                    colorScheme='black' 
+                                    variant='outline'
+                                    width='200px'
+                                    className='justify-self-end mt-3'>
+                                    Read more
+                                </Button>
+                            </a>
+                        </div>
+                </animated.div>
 
-                    </div>
-            </animated.div>
-
-            <animated.div id='projectDiv2' ref={ref3} style={{transform: inView3 ? 'translateX(0px) ' : 'translateY(-300px)'}} className='pb-5 z-0 project lg:w-[30vw] lg:h-[40vh] bg-[#B2C58B] lg:hover:h-full hover:bg-slate-100] '>
-                 <div className='flex flex-col justify-center p-5'>
-                        <h3 className='text-2xl'>
+            <animated.div id='projectDiv2' ref={ref3} style={{transform: inView3 ? 'translateX(0px) ' : 'translateY(-300px)'}} className='pb-5 z-0 project lg:w-[30vw] lg:h-[400px] bg-[#B2C58B] lg:hover:h-full hover:bg-slate-100] '>
+                 <div className='flex flex-col justify-center w-100vw sm:w-[500px] h-full p-5'>
+                        <h3 className='text-2xl mainText pb-2'>  
                         Peace Cup 2010
                         </h3>
                         <p >
@@ -95,7 +93,6 @@ const Activities = () => {
                         </a>
                     </div>
             </animated.div>
-               
              </div>
     </div>
   

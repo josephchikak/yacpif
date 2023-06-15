@@ -8,6 +8,8 @@ import computer from '../assets/images/computer.jpg'
 import dialogue from '../assets/images/dialogue.jpg'
 import fasting from '../assets/images/fasting.webp'
 import { Element } from 'react-scroll/modules'
+import { useDispatch, useSelector } from 'react-redux';
+import { setTheme } from '../themeSlice';
 
 const Projects = () => {
 
@@ -15,11 +17,13 @@ const Projects = () => {
     const [ref2, inView2] = useInView();
     const [ref3, inView3] = useInView();
 
+    const dispatch = useDispatch()
+
   return (
    <Element name='articles'>
-        <div id='about' className='lg:w-[100vw] overflow-auto sm:h-[80vh] h-full lg:flex justify-center pt-10 pb-10'>
-        <div className='sm:flex h-full w-[100vw] sm:w-[70vw]  pt-5 sm:flex-row grid grid-rows-3 grid-cols-1 '>
-                {/* <div id='aboutImg' className=' w-full flex justify-start flex-col pt-5'> 
+        <div id='about' className='lg:w-[100vw] overflow-auto sm:h-[90vh] h-full lg:flex justify-center items-center pt-[50px] pb-10' onMouseOver={() => dispatch(setTheme('#eae8e0'))} >
+        <div className='sm:flex h-full w-[100vw] sm:w-[70vw]  pt-5 sm:flex-row grid grid-rows-3 grid-cols-1'>
+                {/* <div id='aboutImg' className=' w-full flex justify-start flex-col pt-5'> x
                 <p> Projects</p>
         </div> */}
          
@@ -51,13 +55,13 @@ const Projects = () => {
                 <h3 className='border-[#B2C58B] border-b-2 uppercase text-xl pb-4'>YACPIF Computer Class</h3>
                 <div className='flex flex-col justify-between h-[400px] sm:h-full pt-2'>
                     <p> YACPIF asked their Peace Ambassadors, youth working for peace in their communities, what activities they thought that YACPIF could sponsor to further peace. They frequently replied, “Empowerment for the youth.” What type of empowerment, YACPIF asked. Since the YACPIF office has a small computer lab, the youth suggested computer classes.</p>
-                <a href="https://yacpif.wordpress.com/2012/03/14/yacpif-computer-class/" target="_blank" rel="noopener noreferrer">
+                <a href="https://yacpif.wordpress.com/2012/03/14/yacpif-computer-class/" target="_blank" rel="noopener noreferrer" className='pt-5'>
                    <Button 
                     rightIcon={<ArrowForwardIcon />} 
                     colorScheme='black' 
                     variant='outline'
                     width='200px'
-                    className='btnn justify-self-end'>
+                    className='btnn justify-self-end '>
                     Continue reading
                     </Button>
                 </a>

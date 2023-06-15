@@ -1,0 +1,37 @@
+* {
+    /* cursor: none; */
+}
+
+.cursor-dot-outline{
+    pointer-events: none;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 40px;
+    height: 40px;
+    /* background-color: #000000; */
+}
+
+.cursor-dot-outlineB{
+    pointer-events: none;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 40px;
+    height: 40px;
+    /* background-color: #000000e3; */
+}
+
+/* .cursor-dot-outline{
+  
+} */

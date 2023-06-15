@@ -1,8 +1,46 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Nunito&family=Zilla+Slab&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Zilla+Slab&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Figtree:wght@300&family=Nunito&family=Zilla+Slab&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Figtree:wght@300&family=Nunito&family=Zilla+Slab&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); */
+
+/* cinzel-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/cinzel-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/poppins-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* cantarell-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cantarell';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/cantarell-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Corinthia';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/corinthia-v9-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 
 @tailwind base;
@@ -11,8 +49,8 @@
 
 
 :root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: 'Cinzel', serif;
+  font-family: 'Baskervville';
+
   line-height: 1.5;
   font-weight: 400;
   margin: 0;

@@ -1,5 +1,4 @@
-import { useRef } from 'react'
-import React from 'react'
+import React, { useRef } from 'react'
 import { useSpring, animated, useScroll, useInView } from '@react-spring/web'
 import './cursor.css'
 import { useEffect } from 'react'

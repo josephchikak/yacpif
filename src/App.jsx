@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react'
 import {ThemeContext, themes} from './Cursor-theme'
 import { BrowserRouter as Router,} from 'react-router-dom'
 import { ChakraProvider } from '@chakra-ui/react'

@@ -36,7 +36,7 @@ const Footer = () => {
         <div className='flex items-center'>
             {/* <p>Developed by</p> */}
             <div className='weALT flex w-[80px] h-[]'>
-                <img src={weALT} alt="weALT logo"/>
+                <img loading='lazy' src={weALT} alt="weALT logo"/>
             </div>
         </div>          
      

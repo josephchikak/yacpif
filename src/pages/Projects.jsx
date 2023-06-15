@@ -1,5 +1,5 @@
-// import React from 'react'
-import React from 'react';
+
+import React from 'react'
 import { useSpring, animated, useScroll, useInView } from '@react-spring/web'
 import './pages.css'
 import { Button, } from '@chakra-ui/react'
@@ -29,7 +29,7 @@ const Projects = () => {
          
         <animated.div  ref={ref} style={{opacity: inView ? 1: 0, transition:'1s ease-in-out', animationDelay:'0.5s'}} id='project1' className='project sm:w-[500px] h-full sm:h-[35vh] p-5 rounded-md ' > 
               
-              <img src={fasting} alt="" className='rounded-md'/>
+              <img src={fasting} loading='lazy'  alt="" className='rounded-md'/>
               <div className='bg-black w-full h-full flex flex-col items-start p-3 sm:pb-10 rounded-md bg-opacity-5'>
               <h3 className='border-[#B2C58B] border-b-2 uppercase text-xl pb-4'>Muslim and Christian Youth Break Ramadan Fast Together in Jos</h3>
               <div className='flex flex-col justify-between h-[200px] pt-2'>
@@ -48,8 +48,7 @@ const Projects = () => {
               </div> 
           </animated.div>
 
-
-            <animated.div  ref={ref2} style={{opacity: inView2 ? 1: 0, transition:'1s ease-in-out', delay:'1s'}} id='project2' className='project  sm:w-[500px] h-[40vh] p-5 rounded-md ' > 
+          <animated.div  ref={ref2} loading='lazy'  style={{opacity: inView2 ? 1: 0, transition:'1s ease-in-out', delay:'1s'}} id='project2' className='project  sm:w-[500px] h-[40vh] p-5 rounded-md ' > 
                 <img src={computer} alt="" className='rounded-md'/>
                 <div className='bg-black w-full h-[400px] sm:h-full flex flex-col items-start p-3 pb-10 rounded-md bg-opacity-5 '>
                 <h3 className='border-[#B2C58B] border-b-2 uppercase text-xl pb-4'>YACPIF Computer Class</h3>
@@ -73,7 +72,7 @@ const Projects = () => {
             
             <animated.div  ref={ref3} style={{opacity: inView3 ? 1: 0, transition:'1s ease-in-out', animationDelay:'1.5s'}} id='project3' className='project  sm:w-[500px] h-full sm:h-[40vh] p-5 rounded-md' > 
               
-                <img src={dialogue} alt="" className='rounded-md'/>
+                <img src={dialogue} loading='lazy' alt="" className='rounded-md'/>
                 <div className='bg-black w-full h-[400px] sm:h-full flex flex-col items-start p-3 pb-10 rounded-md bg-opacity-5'>
                 <h3 className='border-[#B2C58B] border-b-2  uppercase text-xl pb-4'>Forum for Dialogue on Peacebuilding and Conflict Mediation in Jos, Plateau State</h3>
                 <div className='flex flex-col justify-between h-full pt-2'>

@@ -1,6 +1,7 @@
 {
   "name": "yacpif",
   "private": true,
+  "homepage": "https://yacpif-bdyk2ccyt-josephchikak.vercel.app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

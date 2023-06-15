@@ -23,9 +23,7 @@ const Projects = () => {
    <Element name='articles'>
         <div id='about' className='lg:w-[100vw] overflow-auto sm:h-[90vh] h-full lg:flex justify-center items-center pt-[50px] pb-10' onMouseOver={() => dispatch(setTheme('#eae8e0'))} >
         <div className='sm:flex h-full w-[100vw] sm:w-[70vw]  pt-5 sm:flex-row grid grid-rows-3 grid-cols-1'>
-                {/* <div id='aboutImg' className=' w-full flex justify-start flex-col pt-5'> x
-                <p> Projects</p>
-        </div> */}
+
          
         <animated.div  ref={ref} style={{opacity: inView ? 1: 0, transition:'1s ease-in-out', animationDelay:'0.5s'}} id='project1' className='project sm:w-[500px] h-full sm:h-[35vh] p-5 rounded-md ' > 
               

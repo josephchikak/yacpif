@@ -7,7 +7,6 @@ export default defineConfig({
   build:{
     rollupOptions: {
       external:[
-        'react',
         '@chakra-ui/react',
         'react-dom',
         'react-redux',

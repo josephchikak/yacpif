@@ -11,7 +11,7 @@ export default defineConfig({
         '@chakra-ui/react',
         'react-dom',
         'react-redux',
-        'reduxjs/toolkit',
+        '@reduxjs/toolkit'
         ],
     },
    

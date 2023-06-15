@@ -40,14 +40,6 @@ const Cursor = ({}) => {
         requestRef.current = requestAnimationFrame(animateDotoutliine)
     }
 
-    // const toggleCursorVisibility = () => {
-    //     if (cursorVisible.current){
-    //     dotOutline.current.style.backgroundColor = "white"
-    //     }
-    //     else {
-    //     dotOutline.current.style.backgroundColor = "black"
-    //     }
-    // }
 
     const toggleCursorSize = () =>{
         if (cursorEnglarged.current) {
@@ -105,7 +97,7 @@ const Cursor = ({}) => {
     const requestRef = useRef(null);
 
     const theme = useSelector((state) => state.theme.theme)
-    console.log(theme.background)
+    // console.log(theme.background)
 
   return (
     <>

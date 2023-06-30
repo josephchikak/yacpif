@@ -5,28 +5,58 @@ import './pages.css'
 import { Element } from 'react-scroll/modules'
 import { useDispatch, useSelector } from 'react-redux'
 import { setTheme } from '../themeSlice'
-import { getAllPosts } from '../firebase'
+import {
+  getAllPosts,
+  getPostwithID,
+  getPostPhotosKeys,
+  getAllPostsOrderedByTimestamp,
+  getPhotoWithId,
+  getTagWithId,
+  getPostTagsKeys,
+  getTagPostsKeys
+} from '../firebase'
 
 const Home = () => {
   const dispatch = useDispatch()
-  useEffect( () => {
-    async function fetchData() {
-      const response = await getAllPosts()
-      console.log('response', response)
-    }
-    fetchData()
-    // getAllPosts
-    //   .then((res) => {
-    //     console.log('posts: ', res.posts)
-    //   })
-    //   .catch((error) => {
-    //     console.error(error)
-    //   })
-    // const { posts } = getAllPosts()
-    // console.log(posts)
-    // console.log(getAllPosts())
-    // console.log(postsRef)
-  }, [])
+  // const postIdSample = '-NYGkHb8mtc7Uu8tlrEc'
+  // const photoIdSample = '-NY-VGUcYYmY2ZDEHBe6'
+
+  // examples of how to use firebase sdk functions
+  // useEffect(() => {
+  //   async function fetchAllPosts() {
+  //     // const response = await getAllPosts()
+  //     const response = await getAllPostsOrderedByTimestamp()
+  //     console.log('response', response)
+  //   }
+  //   async function fetchPostwithID() {
+  //     const res = await getPostwithID(postIdSample)
+  //     console.log('post response: ', res)
+  //   }
+  //   async function fetchPhotosKeys() {
+  //     const res = await getPostPhotosKeys(postIdSample)
+  //     console.log('photosKeys: ', res)
+  //   }
+  //   async function fetchPhotoWithId() {
+  //     const res =  await getPhotoWithId(photoIdSample)
+  //     console.log('photo response:', res)
+  //   }
+  //   // fetchAllPosts()
+  //   // fetchPostwithID()
+  //   // fetchPhotosKeys()
+  //   // fetchPhotoWithId()
+
+  //   // getAllPosts
+  //   //   .then((res) => {
+  //   //     console.log('posts: ', res.posts)
+  //   //   })
+  //   //   .catch((error) => {
+  //   //     console.error(error)
+  //   //   })
+  //   // const { posts } = getAllPosts()
+  //   // console.log(posts)
+  //   // console.log(getAllPosts())
+  //   // console.log(postsRef)
+  // }, [])
 
   return (
     <Element name="home">

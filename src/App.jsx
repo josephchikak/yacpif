@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import {ThemeContext, themes} from './Cursor-theme'
-import { BrowserRouter as Router,} from 'react-router-dom'
 import { ChakraProvider } from '@chakra-ui/react'
 import { configureStore } from '@reduxjs/toolkit'
 import './App.css'
@@ -11,6 +10,8 @@ import Navbar from './components/Navbar'
 import Projects from './pages/Projects'
 import Activities from './pages/Activities'
 import Cursor from './components/Cursor'
+import { Route, Routes } from 'react-router-dom'
+import Blog from './pages/Blog'
 
 
 function App() {
@@ -38,15 +39,12 @@ function App() {
     <>
    
     <ChakraProvider>
-      <Router>
         <Cursor />
          <Navbar/> 
-         <Home/>
-          <About />
-          <Activities/>
-          <Projects/>
-          <Footer/>
-        </Router>
+        <Routes>
+        <Route path='/' element={[<Home/>, <About/>, <Activities/>, <Projects/>, <Footer/> ]}/>
+        <Route path='/blog' element={<Blog/>}/>
+        </Routes>
     </ChakraProvider>    
     
     </>

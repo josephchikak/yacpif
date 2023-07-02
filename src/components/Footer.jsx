@@ -6,6 +6,7 @@ import weALT from '../assets/images/IMG_1922.png'
 import '../pages/pages.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { setTheme } from '../themeSlice';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -22,7 +23,7 @@ const Footer = () => {
             <a href="https://web.facebook.com/YoungAmbassadorsForPeace?_rdc=1&_rdr" target='_blank' rel="noreferrer"> <img className='w-[40px]' src={facebook} alt='facebook'/></a> 
             <div className=' pt-2 grid grid-cols-3 gap-1 items-center'>
                
-                <a href="https://yacpif.wordpress.com/" target='_blank' rel="noreferrer">Blog</a>
+                <Link to={'/blog'} target='_blank' rel="noreferrer">Blog</Link>
         </div>  
         </div>
           

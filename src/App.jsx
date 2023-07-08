@@ -11,39 +11,27 @@ import Projects from './pages/Projects'
 import Activities from './pages/Activities'
 import Cursor from './components/Cursor'
 import { Route, Routes } from 'react-router-dom'
-import Blog from './pages/Blog'
+import Blog from './pages/Blog/Blog'
+import PostDetails from './pages/Blog/PostDetails'
+import ArticleNav from './components/ArticleNav'
 
 
 function App() {
 
   const cursorVisible = useRef(true)  
 
-  const toggleCursorVisibility = () => {
-      if (cursorVisible.current){
-      dotOutline.current.style.backgroundColor = "white"
-      }
-      else {
-      dotOutline.current.style.backgroundColor = "black"
-      }
-  }
 
 
-
-  const mouseOverEventB = () =>{
-    // cursorEnglarged.current = true
-    cursorVisible.current = true;
-    toggleCursorVisibility();
-}
 
   return (
     <>
    
     <ChakraProvider>
         <Cursor />
-         <Navbar/> 
         <Routes>
-        <Route path='/' element={[<Home/>, <About/>, <Activities/>, <Projects/>, <Footer/> ]}/>
-        <Route path='/blog' element={<Blog/>}/>
+        <Route path='/' element={[ <Navbar/> ,<Home/>, <About/>, <Activities/>, <Footer/> ]}/>
+        <Route path='/blog' element={[<ArticleNav/> ,<Blog/>]}/>
+        <Route path='blog/article/:id' element={<PostDetails/>}/>
         </Routes>
     </ChakraProvider>    
     

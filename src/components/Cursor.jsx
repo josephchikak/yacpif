@@ -97,11 +97,12 @@ const Cursor = ({}) => {
     const requestRef = useRef(null);
 
     const theme = useSelector((state) => state.theme.theme)
+    // const scale = useSelector((state) => state.theme.scale 
     // console.log(theme.background)
 
   return (
     <>
-        <div ref={dotOutline} className="cursor-dot-outline invisible sm:visible" style={{backgroundColor: theme.background}}></div>
+        <div ref={dotOutline} className="cursor-dot-outline invisible sm:visible" style={{backgroundColor: theme.background, transform: `scale(${theme.scale})` }}></div>
     </>
   )
 }

@@ -1,0 +1,27 @@
+.blogBg{
+    background-image: url('./assets/yacpif1.jpg');
+    background-size: cover;
+}
+
+#blog{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    background-image: url('./assets/aaabstract.png');
+}
+
+
+.imgTitle:hover p{
+    visibility: visible;
+    /* transform: scale(110%); */
+    transition: all ease-out 1s;
+    background-blend-mode: overlay;
+
+}
+
+.imgTitle p{
+    background-color: rgba(0, 0, 0, 0.464);
+}

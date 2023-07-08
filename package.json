@@ -17,8 +17,8 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@react-spring/web": "^9.7.2",
+    "@react-three/drei": "^9.78.1",
     "@reduxjs/toolkit": "^1.9.5",
-    "axios": "^1.4.0",
     "firebase": "^9.22.2",
     "framer-motion": "^10.12.16",
     "localforage": "^1.10.0",
@@ -29,7 +29,8 @@
     "react-router-dom": "^6.11.2",
     "react-scroll": "^1.8.9",
     "react-spring": "^9.7.1",
-    "sort-by": "^0.0.2"
+    "sort-by": "^0.0.2",
+    "three": "^0.154.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

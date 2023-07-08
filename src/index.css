@@ -51,6 +51,8 @@
 :root {
   font-family: 'Baskervville';
 
+  /* cursor: none; */
+
   line-height: 1.5;
   font-weight: 400;
   margin: 0;

@@ -1,19 +1,33 @@
-#home{
 
+
+#home , #activities{
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(10px);
+  background-image: url('../assets/svg/aaabstract.png');
 
-  border-radius: 2em;
+  /* border-radius: 2em; */
 
   /* margin: 1em; */
 }
 
+#footer{
+    background-color: black;
+}
+
+/* #home, #activities{
+} */
+
 #navbar{
-    background-color: #eae8e0;
+    background-color: #ffffffe2;
+    /* background-color: #eae8e0; */
+    background-image: url('../assets/svg/');
+    background-size: cover;
+    
+    
     transition: all 1s ease-in-out;
     font-family: 'Cinzel', serif;
     /* position: fixed; */

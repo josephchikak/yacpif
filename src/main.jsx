@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Provider store = {store}>
 
       
-      <Router basename='yacpif.org/'>
+      <Router basename='/'>
          <App />
       </Router>
    </Provider>

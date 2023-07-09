@@ -29,7 +29,7 @@ function App() {
     <ChakraProvider>
         <Cursor />
         <Routes>
-        <Route path='/home' element={[ <Navbar/> ,<Home/>, <About/>, <Activities/>, <Footer/> ]}/>
+        <Route path='/' element={[ <Navbar/> ,<Home/>, <About/>, <Activities/>, <Footer/> ]}/>
         <Route path='/blog' element={[<ArticleNav/> , <Blog/>]}/>
         <Route path='blog/article/:id' element={<PostDetails/>}/>
         </Routes>

@@ -7,8 +7,9 @@ const DisplayPost = ({title, loading, posts}) => {
     const navigate = useNavigate()
 
     const handleNavigate = (post)  =>{
-        navigate(`article/${post.value.title}`, {state: post})
+        navigate(`article/${post.value.title}`, {state: post, loading:loading})
     }
+
   return (
     <div className='w-[100%] sm:w-[100vw] h-full justify-center items-center pb-2 flex '>
         

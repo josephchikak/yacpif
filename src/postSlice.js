@@ -1,18 +1,11 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";   
 import {getAllPosts, getPhotoWithId ,getPostPhotosKeys} from './firebase';
 
-// const initialState = {
-//         ID: '',
-//         images:[],
-//         article:''
-// };
 
 export const fetchPosts = createAsyncThunk(
     'posts/fetchPosts',
     async (thunkAPI) => { 
-        // getAllPosts().then((response) =>{
-            //     // setPost(response)
-            //   console.log(response)
+     
         const response = await getAllPosts()
      
         return response
@@ -20,38 +13,6 @@ export const fetchPosts = createAsyncThunk(
     }
 )
 
-
-// getPostPhotosKeys(state.key).then((response) =>{
-//     response.map(id =>{
-//         getPhotoWithId(id.trim()).then((response) =>{
-//             return response.value.url
-//         })
-//     })
-//     // setPost(response
-// //    console.log(response)
-// //   dispatch(postsCollected(response))
-//  }) 
-
-// export const fetchPhotos = createAsyncThunk(
-//     'posts/fetchPhotos',
-//     async (thunkAPI) => { 
-//       const response = await getPostPhotosKeys(id)
-      
-//         response.map(id =>{
-//             getPhotoWithId(id.trim()).then((response) =>{
-//                 photos.push((response.value.url))
-//                })
-
-      
-           
-
-//         // getAllPosts().then((response) =>{
-//             //     // setPost(response)
-//             //   console.log(response)
-       
-
-//     }
-// )
 
 
 

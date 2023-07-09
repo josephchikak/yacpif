@@ -7,7 +7,7 @@ import fasting from './assets/fasting.webp'
 
 
 
-const PostCard = ({post, description, image, handleClick}) => {
+const PostCard = ({post, handleClick}) => {
    
 
     const [ref, inView] = useInView();

@@ -10,13 +10,15 @@ import yacpif from './assets/yacpif.png'
 
 
 const PostDetails = () => {
-    const {state} = useLocation();
+    const {state} = useLocation()
     const [photo, setPhoto] = useState([])
     const [date, setDate] = useState('')
     const [title, setTitle] =useState([])
-    
+  
+
     useLayoutEffect(() =>{
         fetchKeys()
+
     }, [])
 
     const fetchKeys = async () => {
@@ -31,13 +33,15 @@ const PostDetails = () => {
    
     })}
 
+
   return(
     <>
 
-    <div className='w-[100vw] h-full flex justify-center relative mb-10'>
-        <div className='flex justify-center w-[80vw] sm:w-[50vw] pt-20 mb-10'>
 
-            { photo.length > 0 ? 
+            { photo.length && state.date !== ''  ? 
+    <div   style={{ 'overflowY':scroll }} className='w-[100vw] h-full flex justify-center relative mb-10'>
+        <div className='flex justify-center w-[80vw] sm:w-[50vw] h-full pt-20 mb-10'>
+
             <div className='flex flex-col'>
                 <h2 className='text-[1.5rem] sm:text-[3rem]'>{state.value.title}</h2>
                 <p className='pt-2'>{date.toDateString()}</p>
@@ -56,13 +60,14 @@ const PostDetails = () => {
 
                     </div>
             </div>  
+         </div>
+    </div>
+
             : 
-            <div className='absolute w-[100vw] h-[100vh] flex justify-center items-center animate-spin '>
+            <div style={{}} className='absolute w-[100vw] h-[100vh] flex justify-center items-center animate-spin '>
                 <SpinnerIcon className='scale-150'/>
             </div>
             }
-        </div>
-    </div>
      
     </>
     

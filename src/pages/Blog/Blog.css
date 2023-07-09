@@ -15,8 +15,7 @@
 
 
 .imgTitle:hover p{
-    visibility: visible;
-    /* transform: scale(110%); */
+    /* visibility: visible; */
     transition: all ease-out 1s;
     background-blend-mode: overlay;
 
@@ -24,4 +23,11 @@
 
 .imgTitle p{
     background-color: rgba(0, 0, 0, 0.464);
+}
+
+@media (min-width: 640px) {
+    .imgTitle:hover p{
+        visibility: visible;
+    
+    }    
 }

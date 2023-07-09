@@ -35,7 +35,7 @@ const Activities = () => {
                     <p className='lg:text-clip'>
                     YACPIF has acquired a Social Center in Jos. The Social Center is located in a “border area” between a Christian and a Muslim communities. The purpose of the Social Center is to provide a space where Muslim and Christian youth come together and build friendships.
                     </p>
-                    <LinkTo to= {'/blog'} target="_blank" rel="noopener noreferrer">
+                    <LinkTo to= {'/blog'}>
                         <Button 
                             rightIcon={<ArrowForwardIcon />} 
                             colorScheme='black' 
@@ -63,7 +63,7 @@ const Activities = () => {
                             <p>
                             After the success of the Peace Cup football program in Jos North and Jos South that brought Christian and Muslim youths together <br /> the Young Ambassadors suggested that Peace Football programs be held in their local communities.
                             </p>
-                            <LinkTo to= {'/blog'} target="_blank" rel="noopener noreferrer">
+                            <LinkTo to= {'/blog'}>
                                 <Button 
                                     rightIcon={<ArrowForwardIcon />} 
                                     colorScheme='black' 
@@ -84,7 +84,7 @@ const Activities = () => {
                         <p className='text-clip'>
                         YACPIF hosted Peace Cup 2010 on 21 December 2010 at Bukuru Mini-Stadium. The winning teams from the Jos North and Jos South Peace Cup Camps (posted about here) played in a tournament football match. A peace rally accompanied the football match.
                         </p>
-                        <LinkTo to= {'/blog'} target="_blank" rel="noopener noreferrer">
+                        <LinkTo to={'/blog'}>
                             <Button 
                                 rightIcon={<ArrowForwardIcon />} 
                                 colorScheme='black' 
